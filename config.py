@@ -48,7 +48,9 @@ def config():
     cfg.coefficient = np.zeros([int(len(cfg.y)/40),6])
 #     cfg.x = np.linspace(0,W-1,W) if cfg.hv == "h" else np.linspace(0,H-1,H).reshape(-1,1)
 #     cfg.coefficient = np.zeros([int(len(cfg.x)/10),6])
-
+    cfg.net_dir="./data/train3/"
+    cfg.model_dir = "./data/model3/"
+    cfg.tensorboard_dir = "./path/to/log/"
 
 #     # The image processing
 #     cfg.GCME = True # "None", ""

@@ -232,11 +232,11 @@ class Fringes_Generator():
         # self._c.A = [128]*3
         # self._c.B = [50]*3
 
-        self._c.C = 2.5 #返回的是标准正态分布的一个值
-        # self._c.C = 2.5*np.random.rand() # -10,10 np.random.rand()返回的是标准正态分布的一个值
-        self._c.D = 0#10*np.random.rand()-5  # -5,5
-        self._c.E = 0#6*np.random.rand()-3   # -3,3
-        self._c.F = 0#4*np.random.rand()-2   # -2,2
+        # self._c.C = 2.5 #返回的是标准正态分布的一个值
+        self._c.C = 5*np.random.rand() # -10,10 np.random.rand()返回的是标准正态分布的一个值
+        self._c.D = 4*np.random.rand()  # -5,5
+        self._c.E = 3*np.random.rand()   # -3,3
+        self._c.F = 2*np.random.rand()   # -2,2
         self._c.gamma = 0.8*np.random.rand()+1.5 # 0.7,2.3
         self._c.parameter_array = [A0,self._c.B[0],self._c.C,self._c.D,self._c.E,self._c.F]
 
